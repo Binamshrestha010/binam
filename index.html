@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="container"><br><br>
+        <header><br>
+            <h1>NISHA HOTEL MENU</h1>
+            <p>AND BILLING SYSTEM</p>
+            <hr><br>
+            <nav class="navbar">
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#menu">Menu</a>
+                <a href="#billing">Billing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="menu" class="card">
+            <h2>MENU</h2><br>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <img src="shikhar.jpg" alt="Shikhar Ice" class="menu-img">
+                    <h3>Shikhar Ice</h3>
+                    <p>Price: NPR 20</p>
+                </div>
+                <div class="menu-item">
+                    <img src="gorkha.jpg" alt="Gorkha Strong" class="menu-img">
+                    <h3>Gorkha Strong</h3>
+                    <p>Price: NPR 190</p>
+                </div>
+                <div class="menu-item">
+                    <img src="golden.jpg" alt="Golden Oak" class="menu-img">
+                    <h3>Golden Oak</h3>
+                    <p>Price: NPR 320</p>
+                </div>
+                <div class="menu-item">
+                    <img src="buffmomo.jpg" alt="Buff Momo" class="menu-img">
+                    <h3>Buff Momo</h3>
+                    <p>Price: NPR 80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="vegmomo.jpg" alt="Veg Momo" class="menu-img">
+                    <h3>Veg Momo</h3>
+                    <p>Price: NPR 50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="chickenmomo.jpg" alt="Chicken Momo" class="menu-img">
+                    <h3>Chicken Momo</h3>
+                    <p>Price: NPR 100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="thupa.jpg" alt="Thupa" class="menu-img">
+                    <h3>Thupa</h3>
+                    <p>Price: NPR 50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="surya.jpg" alt="Surya" class="menu-img">
+                    <h3>Surya</h3>
+                    <p>Price: NPR 20</p>
+                </div>
+                <div class="menu-item">
+                    <img src="khukuri.jpg" alt="Khukuri" class="menu-img">
+                    <h3>Khukuri</h3>
+                    <p>Price: NPR 10</p>
+                </div>
+                <div class="menu-item">
+                    <img src="chou.jpg" alt="Shikhar Ice" class="menu-img">
+                    <h3>chow mein</h3>
+                    <p>Price: NPR 80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="alu.jpg" alt="Gorkha Strong" class="menu-img">
+                    <h3>Alu chips</h3>
+                    <p>Price: NPR 25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="chiya.jpg" alt="Golden Oak" class="menu-img">
+                    <h3>Chiya</h3>
+                    <p>Price: NPR 25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="coke.jpg" alt="Buff Momo" class="menu-img">
+                    <h3>Coke</h3>
+                    <p>Price: NPR 60</p>
+                </div>
+                <div class="menu-item">
+                    <img src="fanta.jpg" alt="Veg Momo" class="menu-img">
+                    <h3>Fanta</h3>
+                    <p>Price: NPR 60</p>
+                </div>
+                <div class="menu-item">
+                    <img src="appy.jpg" alt="Chicken Momo" class="menu-img">
+                    <h3>Appy</h3>
+                    <p>Price: NPR 30</p>
+                </div>
+                <div class="menu-item">
+                    <img src="room.jpg" alt="Thupa" class="menu-img">
+                    <h3>Room book</h3>
+                    <p>Price: NPR 500</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="card">
+            <h2>PRODUCTS</h2><br>
+            <div class="product-list">
+                <!-- Existing product list remains unchanged -->
+                <div class="product" onclick="addToBill('Shikhar Ice', 20)">
+                    <h3>Shikhar Ice</h3>
+                    <p>Price: NPR 20</p>
+                </div>
+                <div class="product" onclick="addToBill('Gorkha Strong', 190)">
+                    <h3>Gorkha Strong</h3>
+                    <p>Price: NPR 190</p>
+                </div>
+                <div class="product" onclick="addToBill('Golden Oak', 320)">
+                    <h3>Golden Oak</h3>
+                    <p>Price: NPR 320</p>
+                </div>
+                <div class="product" onclick="addToBill('Buff Momo', 80)">
+                    <h3>Buff Momo</h3>
+                    <p>Price: NPR 80</p>
+                </div>
+                <div class="product" onclick="addToBill('Veg Momo', 50)">
+                    <h3>Veg Momo</h3>
+                    <p>Price: NPR 50</p>
+                </div>
+                <div class="product" onclick="addToBill('Chicken Momo', 100)">
+                    <h3>Chicken Momo</h3>
+                    <p>Price: NPR 100</p>
+                </div>
+                <div class="product" onclick="addToBill('Thupa', 50)">
+                    <h3>Thupa</h3>
+                    <p>Price: NPR 50</p>
+                </div>
+                <div class="product" onclick="addToBill('Surya', 20)">
+                    <h3>Surya</h3>
+                    <p>Price: NPR 20</p>
+                </div>
+                <div class="product" onclick="addToBill('Khukuri', 10)">
+                    <h3>Khukuri</h3>
+                    <p>Price: NPR 10</p>
+                </div>
+                <div class="product" onclick="addToBill('chou mein', 80)">
+                    <h3>chow mein</h3>
+                    <p>Price: NPR 80</p>
+                </div>
+                <div class="product" onclick="addToBill('Alu chips', 25)">
+                    <h3>Alu chips</h3>
+                    <p>Price: NPR 25</p>
+                </div>
+                <div class="product" onclick="addToBill('chiya', 25)">
+                    <h3>Chiya</h3>
+                    <p>Price: NPR 25</p>
+                </div>
+                <div class="product" onclick="addToBill('coke', 60)">
+                    <h3>Coke</h3>
+                    <p>Price: NPR 60</p>
+                </div>
+                <div class="product" onclick="addToBill('Fanta', 60)">
+                    <h3>Fanta</h3>
+                    <p>Price: NPR 60</p>
+                </div>
+                <div class="product" onclick="addToBill('Appy', 30)">
+                    <h3>Appy</h3>
+                    <p>Price: NPR 30</p>
+                </div>
+                <div class="product" onclick="addToBill('Room', 500)">
+                    <h3>Room book</h3>
+                    <p>Price: NPR 500</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="billing" class="card">
+            <h2>Billing</h2>
+            <div id="bill-items">
+                <!-- Dynamically added items will appear here -->
+            </div>
+            <p><strong>Total Price:</strong> NPR<span id="total-price">0</span></p>
+        </section>
+
+
+        <!-- for contact details -->
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <a href="https://9811397438">9811397438</a><br><br>
+                    <img src="phone.jpg" alt="phone number">
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="https://sthabinam759@gmail.com">sthabinam759@gmail.com</a><br><br>
+                    <img src="email.jpg" alt="email">
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <a href="https://maps.app.goo.gl/XupXmt6VqXD7az2g8">Lekhnath Chowk,Dharan-16,Nepal</a>
+                    <img src="address.jpg" alt="address">
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            let totalPrice = 0;
+const billItems = {}; // Object to store items and their quantities
+
+function addToBill(productName, productPrice) {
+    // Check if the product already exists in the bill
+    if (billItems[productName]) {
+        billItems[productName].quantity += 1;
+        billItems[productName].total += productPrice;
+    } else {
+        // Add a new product to the bill
+        billItems[productName] = {
+            price: productPrice,
+            quantity: 1,
+            total: productPrice,
+        };
+    }
+    renderBill();
+}
+
+function removeFromBill(productName) {
+    // Check if the product exists in the bill
+    if (billItems[productName]) {
+        billItems[productName].quantity -= 1; // Decrease quantity
+        billItems[productName].total -= billItems[productName].price; // Update total
+
+        // Remove the product if quantity reaches zero
+        if (billItems[productName].quantity <= 0) {
+            delete billItems[productName];
+        }
+        renderBill();
+    }
+}
+
+function renderBill() {
+    // Clear the existing bill items
+    const billContainer = document.getElementById('bill-items');
+    billContainer.innerHTML = '';
+
+    totalPrice = 0; // Reset total price
+
+    for (const productName in billItems) {
+        const item = billItems[productName];
+
+        // Create a container for each item
+        const itemContainer = document.createElement('div');
+        itemContainer.style.display = 'flex';
+        itemContainer.style.justifyContent = 'space-between';
+        itemContainer.style.alignItems = 'center';
+        itemContainer.style.marginBottom = '10px';
+
+        // Create item description
+        const itemElement = document.createElement('p');
+        itemElement.textContent = `${item.quantity} x ${productName} - Npr${item.total}`;
+
+        // Create add button
+        const addButton = document.createElement('button');
+        addButton.textContent = '+';
+        addButton.style.padding = '5px 10px';
+        addButton.style.marginLeft = '10px';
+        addButton.style.cursor = 'pointer';
+        addButton.onclick = () => addToBill(productName, item.price); // Add product on click
+
+        // Create minus button
+        const minusButton = document.createElement('button');
+        minusButton.textContent = '-';
+        minusButton.style.padding = '5px 10px';
+        minusButton.style.marginLeft = '5px';
+        minusButton.style.cursor = 'pointer';
+        minusButton.onclick = () => removeFromBill(productName); // Remove product on click
+
+        // Append elements to the item container
+        itemContainer.appendChild(itemElement);
+        itemContainer.appendChild(addButton);
+        itemContainer.appendChild(minusButton);
+
+        // Append the item container to the bill section
+        billContainer.appendChild(itemContainer);
+
+        // Update the total price
+        totalPrice += item.total;
+    }
+
+    // Update the total price display
+    document.getElementById('total-price').textContent = totalPrice;
+}
+
+
+
+        </script>
+
+        <footer>
+            <p>&copy; 2025 NISHA Hotel Billing System - All Rights Reserved</p>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
